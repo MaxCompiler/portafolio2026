@@ -19,6 +19,7 @@ body{
 .navbar{
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
 }
 .navbar ul{
     display: flex;
