@@ -32,6 +32,9 @@ body{
     margin: 20px;
     color: white;
 }
+.navbar a:hover{
+    border-bottom: var(--primary) solid;
+}
 .hero{
     background-color: var(--dark2);
     position: relative;
@@ -110,6 +113,9 @@ body{
     text-decoration: none;
     color: var(--secondary);
 }
+.square-text-3:hover{
+    border-bottom: var(--primary) solid;
+}
 .contact-icon{
     top: 450px;
     z-index: 11;
@@ -118,4 +124,10 @@ body{
     width: 35px;
     margin: 0 10px;
     
+}
+.contact-icon img:hover{
+    transform: scale(1.2);
+}
+span{
+    color: var(--primary);
 }
