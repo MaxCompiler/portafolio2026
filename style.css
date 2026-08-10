@@ -131,11 +131,13 @@ body{
 span{
     color: var(--primary);
 }
+/*briefcase*/
 .briefcase{
     background: var(--dark2);
+    padding: 50px 0;
 }
 .briefcase-section h2{
-    padding: 40px;
+    padding: 50px;
     text-align: center;
 
 }
@@ -154,4 +156,43 @@ span{
 }
 .briefcase-grid img:hover{
     transform: scale(1.1);
+}
+
+/*skills*/
+.skills{
+    background: var(--dark2);
+    padding-bottom: 70px;
+}
+.skill{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 170px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.skill img{
+    width: 90px;
+}
+.knowledge{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+    gap: 25px;
+    justify-content: center;
+
+}
+.tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
+    gap: 50px;
+    justify-content: center;
+
+}
+.skill h2{
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 70px;
+}
+.knowledge h3 , .knowledge h3{
+    text-align: center;
 }
