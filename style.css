@@ -131,3 +131,27 @@ body{
 span{
     color: var(--primary);
 }
+.briefcase{
+    background: var(--dark2);
+}
+.briefcase-section h2{
+    padding: 40px;
+    text-align: center;
+
+}
+.briefcase-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    gap: 20px;
+    width: 90%;
+    margin:0 auto ;
+
+}
+.briefcase-grid img{
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+.briefcase-grid img:hover{
+    transform: scale(1.1);
+}
