@@ -16,6 +16,11 @@ body{
     font-family: 'signika', sans-serif;
     color: var(--secondary);
 }
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/*header*/
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -144,11 +149,23 @@ span{
 .briefcase-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(290px,auto));
-    gap: 20px;
+    gap: 25px;
     width: 90%;
     margin:0 auto ;
 
 }
+.briefcase-grid p,.briefcase h3{
+    color: var(--secondary);
+    margin: 5px;
+}
+.briefcase a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.briefcase a:hover{
+    border-bottom: var(--primary) 2px solid;
+}
+
 .briefcase-grid img{
     width: 100%;
     border-radius: 15px;
@@ -209,4 +226,45 @@ span{
 .knowledge>div:hover h3, .tools>div:hover h3{
     opacity: 1 ;
     transform: translate(0px , -150px);
+}
+
+/*about*/
+.about{
+    background-color: var(--dark2);
+}
+.about-flex{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 200px;
+}
+.about p{
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: var(--secondary-light);
+}
+.social{
+    border-left: var(--secondary) 5px solid;
+    padding-left: 50px;
+}
+.social img{
+    width: 60px;
+    margin: 10px;
+
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.about h2{
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    background-color: var(--dark2);
+    text-align: center;
+    color: var(--secondary-light);
+    padding: 15px;
 }
