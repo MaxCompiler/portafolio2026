@@ -1,0 +1,23 @@
+{
+  "name": "portafolio2026",
+  "version": "1.0.0",
+  "description": "portafolio 2026",
+  "homepage": "https://github.com/MaxCompiler/portafolio2026#readme",
+  "bugs": {
+    "url": "https://github.com/MaxCompiler/portafolio2026/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxCompiler/portafolio2026.git"
+  },
+  "license": "ISC",
+  "author": "Edwin Suarez Lino",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}

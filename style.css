@@ -154,7 +154,7 @@ span{
     margin:0 auto ;
 
 }
-.briefcase-grid p,.briefcase h3{
+/* .briefcase-grid p,.briefcase h3{
     color: var(--secondary);
     margin: 5px;
 }
@@ -164,7 +164,7 @@ span{
 }
 .briefcase a:hover{
     border-bottom: var(--primary) 2px solid;
-}
+} */
 
 .briefcase-grid img{
     width: 100%;
