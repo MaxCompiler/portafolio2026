@@ -314,3 +314,40 @@ span{
     width: 50px;
     height: 50px;
 }
+/*Contacto formulario*/
+form{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+form>label>input{
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 10px 60px;
+    color: var(--secondary);
+    outline: none;
+    width: 100%;
+    opacity: 0.7;
+}
+form>label>textarea{
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 50px;
+    color: var(--secondary);
+    outline: none;
+    width: 100%;
+    opacity: 0.7;
+
+}
+label{
+    padding: 5px;
+
+}
+form>button{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+
+}
