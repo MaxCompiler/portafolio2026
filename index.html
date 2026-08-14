@@ -13,17 +13,22 @@
 </head>
 
 <body>
+
     <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
         <div class="hero">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#briefcase">Portafolio</a></li>
-                        <li><a href="#about">Sobre mi</a></li>
-                    </ul>
-                </nav>
-            </div>
+
             <img src="imagen 1.jpg" alt="">
         </div>
 
@@ -36,13 +41,14 @@
             <div class="square-text">Edwin Suarez Lino</div>
             <div class="square-text-2"><span>ING. EN SOFTWARE | FULL-STACK</span></div>
             <div class="contact-icon">
-                <a href="https://github.com/MaxCompiler"><img src="img/github.svg" alt=""></a>
-                <a href="https://www.linkedin.com/in/edwin-suarez-lino/"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://github.com/MaxCompiler" target="_blank"><img src="img/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank"><img src="img/linkedin.svg"
+                        alt=""></a>
                 <a href=""><img src="img/correo.svg" alt=""></a>
             </div>
             <div class="square-text-3"><a href="#about"><span>About me | </span>Sobre mi</a></div>
         </div>
-    </header>
+    </section>
 
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section container">
@@ -55,7 +61,7 @@
 
                 </div>
                 <div>
-                    <a data-modal-id="myModal"><img
+                    <a data-modal-id="pw-anime-rojo"><img
                             src="https://img.magnific.com/foto-gratis/ilustracion-ojos-anime_23-2151660535.jpg?semt=ais_test_b&w=740&q=80"
                             alt=""></a>
                 </div>
@@ -165,8 +171,9 @@
                 </p>
             </div>
             <div class="social">
-                <a href="https://github.com/MaxCompiler"><img src="img/github.svg" alt=""></a>
-                <a href="https://www.linkedin.com/in/edwin-suarez-lino/"><img src="img/linkedin.svg" alt=""></a>
+                <a href="https://github.com/MaxCompiler" target="_blank"><img src="img/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/edwin-suarez-lino/" target="_blank"><img src="img/linkedin.svg"
+                        alt=""></a>
                 <a href=""><img src="img/correo.svg" alt=""></a>
             </div>
         </div>
@@ -186,7 +193,8 @@
                 <div class="eins-modal-text">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit assumenda nobis voluptates odio
                         laudantium, aut iusto.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet necessitatibus assumenda, esse debitis distinctio is
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet necessitatibus
+                        assumenda, esse debitis distinctio is
                     </p>
 
                     <div class="eins-modal-text-2">
@@ -207,6 +215,62 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="pw-anime-rojo" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="https://img.magnific.com/foto-gratis/ilustracion-ojos-anime_23-2151660535.jpg?semt=ais_test_b&w=740&q=80"
+                        alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit assumenda nobis voluptates odio
+                        laudantium, aut iusto.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet necessitatibus
+                        assumenda, esse debitis distinctio is
+                    </p>
+
+                    <div class="eins-modal-text-2">
+                        <span>ENLANCE: </span> <a
+                            href="https://maxcompiler.github.io/portafolio2026/">https://maxcompiler.github.io/portafolio2026/</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologia usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3128/3128323.png" alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe24qBFf__EDneg1fju4VZhzLGXvuZq-W3wAxIQa8p4w&s=10"
+                                alt="">
+                            <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                                alt="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc8icckkWHoH9SmMQRy-OU1kTPP2QOipG94eg6W36UuA&s=10"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/maewbovb" method="POST">
+                <label>
+                    Tu Correo Electronico:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Tu mensaje:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
 
