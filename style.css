@@ -27,6 +27,26 @@ header{
     max-width: 1500px;
     margin: 0 auto;
 }
+/*boton de descarga pdf*/
+.btn-cv{
+    display: block;
+    background-color: var(--primary);
+    color: var(--dark2);
+    padding: 15px 25px;
+    border-radius: 15px;
+    max-width: 250px;
+    margin: 25px auto 0;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-cv:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(24, 219, 134, 0.4);
+}
+
 /*header*/
 .navbar{
     display: flex;
@@ -145,12 +165,13 @@ span{
 }
 /*briefcase*/
 .briefcase{
-    background: var(--dark2);
+    background-color: var(--dark2);
     padding: 50px 0;
 }
 .briefcase-section h2{
     padding: 50px;
     text-align: center;
+    margin-top: 15px;
 
 }
 .briefcase-grid{
@@ -161,17 +182,6 @@ span{
     margin:0 auto ;
 
 }
-/* .briefcase-grid p,.briefcase h3{
-    color: var(--secondary);
-    margin: 5px;
-}
-.briefcase a{
-    text-decoration: none;
-    color: var(--primary);
-}
-.briefcase a:hover{
-    border-bottom: var(--primary) 2px solid;
-} */
 
 .briefcase-grid img{
     width: 100%;
@@ -251,7 +261,9 @@ span{
     margin: 0 auto;
     line-height: 2.5rem;
     color: var(--secondary-light);
+    margin-bottom: 15px;
 }
+
 .social{
     border-left: var(--secondary) 5px solid;
     padding-left: 50px;
@@ -351,3 +363,160 @@ form>button{
     padding: 10px;
 
 }
+/* =====================================
+   ADAPTACIÓN PARA CELULARES (RESPONSIVE)
+   ===================================== */
+
+@media (max-width: 768px) {
+    /* 1. Menú de navegación */
+    .navbar {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        gap: 5px;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    /* 2. Hero y Tarjeta de Presentación */
+    .hero img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .square {
+        width: 90%;
+        max-width: 320px;
+        height: 420px;
+        top: 30px;
+    }
+
+    .circle-trans {
+        width: 210px;
+        height: 210px;
+        border-width: 15px;
+        top: 50px;
+    }
+
+    .circle {
+        width: 170px;
+        height: 170px;
+        border-width: 10px;
+        top: 70px;
+    }
+
+    .porfile-img {
+        top: 80px;
+    }
+
+    .porfile-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .square-text {
+        font-size: 1.5rem;
+        top: 260px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .square-text-2 {
+        font-size: 1rem;
+        top: 300px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .contact-icon {
+        top: 335px;
+    }
+
+    .square-text-3 {
+        font-size: 1.1rem;
+        top: 380px;
+    }
+
+    /* 3. Secciones y Títulos */
+    .briefcase-section h2,
+    .skill h2,
+    .about h2 {
+        padding: 30px 10px;
+        font-size: 1.5rem;
+    }
+
+    /* 4. Cuadrículas de Proyectos y Habilidades */
+    .briefcase-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .knowledge,
+    .tools {
+        gap: 20px;
+    }
+
+    /* 5. Sección Sobre mí */
+    .about-flex {
+        flex-direction: column;
+        padding: 20px 0 60px;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        border-left: none;
+        border-top: var(--secondary) 3px solid;
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social img {
+        width: 45px;
+        margin: 0 10px;
+    }
+
+    /* 6. Modales y Formulario */
+    .pw-content {
+        grid-template-columns: 1fr;
+    }
+
+    .eins-modal-preview {
+        height: auto;
+    }
+
+    .eins-modal-preview img {
+        padding: 0 0 15px 0;
+    }
+
+    .eins-modal-text-2 {
+        padding: 30px 0 10px;
+        word-break: break-all;
+    }
+
+    form>label>input,
+    form>label>textarea {
+        padding: 12px;
+    }
+}
+
